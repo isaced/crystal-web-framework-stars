@@ -1,6 +1,7 @@
 # Top Crystal Web Frameworks
 A list of popular github projects related to Crystal web framework (ranked by stars automatically)
 Please update **list.txt** (via Pull Request)
+
 | Project Name | Stars | Forks | Open Issues | Description | Last Commit |
 | ------------ | ----- | ----- | ----------- | ----------- | ----------- |
 | [kemal](https://github.com/kemalcr/kemal) | 2485 | 135 | 12 | Fast, Effective, Simple Web Framework | 2019-02-08 09:01:59 |
