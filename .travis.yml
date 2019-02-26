@@ -19,4 +19,4 @@ after_success:
   - git config user.name ${USER}
   - git add README.md
   - git commit -m "Auto update"
-  - git push "https://${github_access_token}@${GH_REPO}" master > /dev/null 2>&1
+  - git push "https://${github_access_token}@${GH_REPO}" master
