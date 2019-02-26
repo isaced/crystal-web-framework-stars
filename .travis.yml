@@ -1,0 +1,7 @@
+language: python
+
+install:
+  - pip install requests
+
+script:
+  - list2md.py
