@@ -19,6 +19,7 @@ after_success:
   - git status
   - git config user.email ${EMAIL}
   - git config user.name ${USER}
+  - git checkout master
   - git add README.md
   - git commit -m "Auto update"
   - git push "https://${github_access_token}@${GH_REPO}" master
