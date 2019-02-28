@@ -4,7 +4,7 @@ import requests
 import os
 
 head = '''# Top Crystal Web Frameworks
-A list of popular github projects related to Python web framework (ranked by stars automatically)
+A list of popular github projects related to Crystal web framework (ranked by stars automatically)
 Please update **list.txt** (via Pull Request)
 
 | Project Name | Stars | Forks | Open Issues | Description | Last Commit |
