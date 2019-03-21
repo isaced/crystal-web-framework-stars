@@ -12,4 +12,4 @@ Please update **list.txt** (via Pull Request)
 | [lattice-core](https://github.com/jasonl99/lattice-core) | 54 | 2 | 2 | A WebSocket-first object-oriented framework for Crystal | 2017-03-31 23:57:57 |
 | [spider-gazelle](https://github.com/spider-gazelle/spider-gazelle) | 54 | 2 | 2 | A Rails esque web framework with a focus on speed and extensibility for crystal lang | 2019-02-06 02:47:10 |
 
-*Last Automatic Update: 2019-03-21T06:21:53*
+*Last Automatic Update: 2019-03-21T08:16:51*
