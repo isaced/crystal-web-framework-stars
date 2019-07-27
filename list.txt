@@ -2,6 +2,6 @@ https://github.com/amberframework/amber
 https://github.com/kemalcr/kemal
 https://github.com/jasonl99/lattice-core
 https://github.com/luckyframework/lucky
-https://github.com/vladfaust/prism
+https://github.com/onyxframework/http
 https://github.com/samueleaton/raze
 https://github.com/spider-gazelle/spider-gazelle
