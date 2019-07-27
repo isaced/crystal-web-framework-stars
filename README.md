@@ -13,4 +13,4 @@ Please update **list.txt** (via Pull Request)
 | [raze](https://github.com/samueleaton/raze) |150|8|7|Modular, light web framework for Crystal|2018-08-28T17:23:02Z|
 | [spider-gazelle](https://github.com/spider-gazelle/spider-gazelle) |65|2|2|A Rails esque web framework with a focus on speed and extensibility for crystal lang|2019-06-24T04:45:50Z|
 
-*Last Automatic Update: 2019-07-27 18:56:07 UTC*
+*Last Automatic Update: 2019-07-27 18:58:38 UTC*
