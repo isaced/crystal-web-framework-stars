@@ -5,7 +5,7 @@ require "json"
 class Output
   property time
 
-  def initialize(@list : Array(Hash(String, JSON::Any | String)))
+  def initialize(@list : Array(Hash(String, JSON::Any)))
     @time = Time.utc
   end
 
@@ -13,7 +13,7 @@ class Output
 end
 
 access_token = ENV["github_access_token"] ||= ""
-repos = [] of Hash(String, JSON::Any | String)
+repos = [] of Hash(String, JSON::Any)
 
 # Read framework list from 'list.txt'
 File.each_line("list.txt") do |line|
@@ -29,6 +29,7 @@ File.each_line("list.txt") do |line|
     repo["last_commit_date"] = commit["commit"]["committer"]["date"]
 
     repos << repo
+    repos.sort_by! { |item| -item["stargazers_count"].as_i }
   end
 end
 
