@@ -1,0 +1,24 @@
+name: Crystal CI
+
+on:
+  schedule:
+  - cron: 0 2 * * 1-5
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: list2md
+      uses: actions/checkout@v1
+      env:
+        USER: isaced
+        EMAIL: "isaced@163.com"
+        REPO: crystal-web-framework-stars
+        GH_REPO: github.com/${{ USER }}/${{ REPO }}.git"
+      run: 
+        crystal list2md.cr
+        ls
+        git status
+      
