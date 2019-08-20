@@ -1,8 +1,6 @@
 name: Crystal CI
 
-on:
-  schedule:
-  - cron: * * * * *
+on: push
 
 jobs:
   build:
