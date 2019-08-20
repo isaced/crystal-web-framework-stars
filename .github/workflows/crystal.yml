@@ -12,9 +12,9 @@ jobs:
       uses: actions/checkout@v1
       env:
         USER: isaced
-        EMAIL: "isaced@163.com"
+        EMAIL: isaced@163.com
         REPO: crystal-web-framework-stars
-        GH_REPO: github.com/${{ USER }}/${{ REPO }}.git"
+        GH_REPO: github.com/isaced/crystal-web-framework-stars.git"
       run: 
         crystal list2md.cr
         ls
