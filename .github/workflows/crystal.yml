@@ -20,3 +20,4 @@ jobs:
         COMMIT_MESSAGE: "Auto update"
         COMMIT_AUTHOR_NAME: "isaced"
         COMMIT_AUTHOR_EMAIL: "isaced@163.com"
+        GITHUB_TOKEN: ${{ secrets.ROBOT_GITHUB_TOKEN }}
