@@ -15,7 +15,7 @@ jobs:
         EMAIL: isaced@163.com
         REPO: crystal-web-framework-stars
         GH_REPO: github.com/isaced/crystal-web-framework-stars.git"
-      run: 
+      run: |
         crystal list2md.cr
         ls
         git status
