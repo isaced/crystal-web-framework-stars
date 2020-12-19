@@ -24,15 +24,14 @@ jobs:
     - name: Commit & Push
       run: |
         git status
+        git remote -v
         git config user.email $EMAIL
         git config user.name $USER
         git checkout master
         git add README.md
         git commit -m "Auto update"
-        git push "https://${{ secrets.ROBOT_GITHUB_TOKEN }}@$REPO" master
+        git push "https://${{ secrets.ROBOT_GITHUB_TOKEN }}@$GITHUB_REPOSITORY" master
       env:
         USER: isaced
         EMAIL: isaced@163.com
-        REPO: crystal-web-framework-stars
-
         
