@@ -14,7 +14,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      
+      with:
+        ref: ${{ github.head_ref }}
+
     - name: Run Crystal Script
       run: crystal list2md.cr
       
