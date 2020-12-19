@@ -14,33 +14,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-        ref: ${{ github.head_ref }}
 
     - name: Run Crystal Script
       run: crystal list2md.cr
       
-    - name: ls
-      run: ls
-      
-    - name: git status
-      run: git status
-      
-    - name: Add & Commit
-      uses: EndBug/add-and-commit@v5.3.0
+    - uses: stefanzweifel/git-auto-commit-action@v4.7.2
       with:
-        author_name: isaced
-        author_email: isaced@163.com
-        message: 'Auto Update'
-        add: 'README.md'
-      env:
-        GITHUB_TOKEN: ${{ secrets.ROBOT_GITHUB_TOKEN }}
-
-    - name: ls
-      run: ls
-      
-    - name: git status
-      run: git status
-      
-    - name: git log
-      run: git log
+        commit_message: Auto Update
+        branch: ${{ github.head_ref }}
