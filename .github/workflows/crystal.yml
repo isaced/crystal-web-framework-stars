@@ -1,6 +1,8 @@
 name: Auto Update CI
 
 on:
+  schedule:
+    - cron: "0 0 * * SUN"
   push:
     branches: [ master ]
 
@@ -14,14 +16,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-  
-    - name: git version
-      run: git --version
       
     - name: Run Crystal Script
       run: crystal list2md.cr
     
     - name: Commit & Push
+      env:
+        USER: isaced
+        EMAIL: isaced@163.com
       run: |
         git status
         git remote -v
@@ -31,7 +33,4 @@ jobs:
         git add README.md
         git commit -m "Auto update"
         git push
-      env:
-        USER: isaced
-        EMAIL: isaced@163.com
         
