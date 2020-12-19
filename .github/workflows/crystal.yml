@@ -20,8 +20,19 @@ jobs:
       
     - name: Run Crystal Script
       run: crystal list2md.cr
-      
-    - uses: stefanzweifel/git-auto-commit-action@v4.7.2
-      with:
-        commit_message: Auto Update
-        branch: ${{ github.head_ref }}
+    
+    - name: Commit & Push
+      run: |
+        git status
+        git config user.email $EMAIL
+        git config user.name $USER
+        git checkout master
+        git add README.md
+        git commit -m "Auto update"
+        git push "https://${{ secrets.ROBOT_GITHUB_TOKEN }}@$REPO" master
+      env:
+        USER: isaced
+        EMAIL: isaced@163.com
+        REPO: crystal-web-framework-stars
+
+        
