@@ -14,4 +14,4 @@ Please update **list.txt** (via Pull Request)
 | [grip](https://github.com/grip-framework/grip) |122|9|0|The microframework for writing powerful web applications.|2020-12-15T10:26:11Z|
 | [lattice-core](https://github.com/jasonl99/lattice-core) |53|2|2|A WebSocket-first object-oriented framework for Crystal|2017-03-31T23:57:57Z|
 
-*Last Automatic Update: 2020-12-18 17:45:00 UTC*
+*Last Automatic Update: 2020-12-19 05:33:20 UTC*
