@@ -14,8 +14,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
+  
+    - name: git version
+      run: git --version
       
     - name: Run Crystal Script
       run: crystal list2md.cr
