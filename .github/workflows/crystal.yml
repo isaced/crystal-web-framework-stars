@@ -3,8 +3,6 @@ name: Auto Update CI
 on:
   schedule:
     - cron: "0 0 * * SUN"
-  push:
-    branches: [ master ]
 
 jobs:
   build:
