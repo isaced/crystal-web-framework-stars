@@ -5,13 +5,13 @@ Please update **list.txt** (via Pull Request)
 
 | Project Name | Stars | Forks | Open Issues | Description | Last Commit |
 | ------------ | ----- | ----- | ----------- | ----------- | ----------- |
-| [kemal](https://github.com/kemalcr/kemal) |2900|157|26|Fast, Effective, Simple Web Framework|2021-02-13T08:18:51Z|
-| [amber](https://github.com/amberframework/amber) |2165|171|40|A Crystal web framework that makes building applications fast, simple, and enjoyable. Get started with quick prototyping, less bugs, and blazing fast performance.|2021-02-11T19:13:20Z|
-| [lucky](https://github.com/luckyframework/lucky) |1920|123|97|A full-featured Crystal web framework that catches bugs for you, runs incredibly fast, and helps you write code that lasts.|2021-02-06T21:33:01Z|
+| [kemal](https://github.com/kemalcr/kemal) |2908|158|26|Fast, Effective, Simple Web Framework|2021-02-13T08:18:51Z|
+| [amber](https://github.com/amberframework/amber) |2172|172|39|A Crystal web framework that makes building applications fast, simple, and enjoyable. Get started with quick prototyping, less bugs, and blazing fast performance.|2021-02-22T05:20:29Z|
+| [lucky](https://github.com/luckyframework/lucky) |1929|123|101|A full-featured Crystal web framework that catches bugs for you, runs incredibly fast, and helps you write code that lasts.|2021-02-25T23:04:48Z|
 | [raze](https://github.com/samueleaton/raze) |173|6|10|Modular, light web framework for Crystal|2021-01-02T01:20:01Z|
 | [http](https://github.com/onyxframework/http) |136|13|7|An opinionated framework for scalable web 🌎|2019-08-13T09:00:30Z|
-| [spider-gazelle](https://github.com/spider-gazelle/spider-gazelle) |131|5|2|A Rails esque web framework with a focus on speed and extensibility for crystal lang|2021-01-28T03:49:22Z|
-| [grip](https://github.com/grip-framework/grip) |130|10|0|The microframework for writing powerful web applications.|2020-12-23T06:40:29Z|
+| [spider-gazelle](https://github.com/spider-gazelle/spider-gazelle) |132|5|2|A Rails esque web framework with a focus on speed and extensibility for crystal lang|2021-01-28T03:49:22Z|
+| [grip](https://github.com/grip-framework/grip) |131|10|0|The microframework for writing powerful web applications.|2021-02-27T06:42:35Z|
 | [lattice-core](https://github.com/jasonl99/lattice-core) |54|2|2|A WebSocket-first object-oriented framework for Crystal|2017-03-31T23:57:57Z|
 
-*Last Automatic Update: 2021-02-21 00:03:12 UTC*
+*Last Automatic Update: 2021-02-28 00:03:09 UTC*
