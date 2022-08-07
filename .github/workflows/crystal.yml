@@ -26,6 +26,7 @@ jobs:
         USER: isaced
         EMAIL: isaced@163.com
       run: |
+        git config --global --add safe.directory /__w/crystal-web-framework-stars/crystal-web-framework-stars
         git status
         git remote -v
         git config user.email $EMAIL
