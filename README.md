@@ -5,6 +5,7 @@ Please update **list.txt** (via Pull Request)
 
 | Project Name | Stars | Forks | Open Issues | Description | Last Commit |
 | ------------ | ----- | ----- | ----------- | ----------- | ----------- |
+| [mint](https://github.com/mint-lang/mint) |3740|100|43|:leaves: A refreshing programming language for the front-end web.|2022-06-28T15:01:26Z|
 | [kemal](https://github.com/kemalcr/kemal) |3327|170|18|Fast, Effective, Simple Web Framework|2022-08-15T09:00:32Z|
 | [amber](https://github.com/amberframework/amber) |2397|181|45|A Crystal web framework that makes building applications fast, simple, and enjoyable. Get started with quick prototyping, less bugs, and blazing fast performance.|2022-05-25T13:40:11Z|
 | [lucky](https://github.com/luckyframework/lucky) |2291|143|76|A full-featured Crystal web framework that catches bugs for you, runs incredibly fast, and helps you write code that lasts.|2022-08-15T15:01:56Z|
@@ -16,4 +17,4 @@ Please update **list.txt** (via Pull Request)
 | [lattice-core](https://github.com/jasonl99/lattice-core) |56|2|2|A WebSocket-first object-oriented framework for Crystal|2017-03-31T23:57:57Z|
 | [runcobo](https://github.com/runcobo/runcobo) |44|1|1|An api framework with type-safe params, elegant json serializer. Thanks for enjoying it! 👻👻 https://runcobo.github.io/docs/|2022-03-16T06:43:35Z|
 
-*Last Automatic Update: 2022-08-21 00:30:09 UTC*
+*Last Automatic Update: 2022-08-21 05:27:07 UTC*
