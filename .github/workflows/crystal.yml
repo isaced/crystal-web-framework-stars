@@ -23,8 +23,8 @@ jobs:
     
     - name: Commit & Push
       env:
-        USER: isaced
-        EMAIL: isaced@163.com
+        USER: github-actions[bot]
+        EMAIL: github-actions[bot]@users.noreply.github.com
       run: |
         git config --global --add safe.directory /__w/crystal-web-framework-stars/crystal-web-framework-stars
         git status
