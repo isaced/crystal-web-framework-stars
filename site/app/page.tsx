@@ -51,8 +51,8 @@ export default async function Home() {
             </tr>
           </thead>
           <tbody>
-            {data?.map((repo) => (
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            {data?.map((repo, idx) => (
+              <tr key={idx} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                   <a href={repo.html_url} target="__blank">
                     {repo.name}
@@ -76,9 +76,12 @@ export default async function Home() {
             className="flex justify-center items-center space-x-1"
             target="_blank"
           >
-            <img
+            <Image
               src="https://avatars.githubusercontent.com/in/15368?s=48&v=4"
-              className="w-4 h-4 rounded-full overflow-hidden"
+              className="rounded-full overflow-hidden"
+              alt={"Github Page"}
+              width={20}
+              height={20}
             />
             <span>isaced/crystal-web-framework-stars</span>
           </a>
