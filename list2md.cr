@@ -28,10 +28,24 @@ File.each_line("list.txt") do |line|
     commit = JSON.parse(HTTP::Client.get(commit_api).body)
     repo["last_commit_date"] = commit["commit"]["committer"]["date"]
 
-    repos << repo
+    # filter keys
+    repos << repo.select { |k, v| [
+      "name",
+      "html_url",
+      "stargazers_count",
+      "forks_count",
+      "open_issues_count",
+      "description",
+      "last_commit_date",
+    ].includes?(k) }
+
     repos.sort_by! { |item| -item["stargazers_count"].as_i }
   end
 end
 
+# Generate README.md
 readme = Output.new(repos).to_s
 File.write("README.md", readme)
+
+# Generate list.json
+File.write("list.json", repos.to_json)
