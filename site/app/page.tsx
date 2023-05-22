@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const DATA_URL = "https://cdn.jsdelivr.net/gh/isaced/crystal-web-framework-stars/list.json";
+const DATA_URL = "https://raw.githubusercontent.com/isaced/crystal-web-framework-stars/master/list.json";
 
 interface Repo {
   name: string;
