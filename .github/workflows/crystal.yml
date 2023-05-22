@@ -35,7 +35,7 @@ jobs:
         git config user.email $EMAIL
         git config user.name $USER
         git checkout master
-        git add README.md
+        git add README.md list.json
         git commit -m "Auto update"
         git push
         
