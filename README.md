@@ -10,7 +10,7 @@ Please update **list.txt** (via Pull Request)
 | [amber](https://github.com/amberframework/amber) |2497|192|33|A Crystal web framework that makes building applications fast, simple, and enjoyable. Get started with quick prototyping, less bugs, and blazing fast performance.|2023-05-07T11:13:11Z|
 | [lucky](https://github.com/luckyframework/lucky) |2438|154|80|A full-featured Crystal web framework that catches bugs for you, runs incredibly fast, and helps you write code that lasts.|2023-04-09T21:29:56Z|
 | [amethyst](https://github.com/amethyst-framework/amethyst) |646|43|12|Amethyst is a Rails inspired web-framework for Crystal language|2018-02-10T19:35:15Z|
-| [marten](https://github.com/martenframework/marten) |310|9|23|The pragmatic web framework.|2023-05-20T22:26:17Z|
+| [marten](https://github.com/martenframework/marten) |310|9|23|The pragmatic web framework.|2023-05-22T14:45:55Z|
 | [grip](https://github.com/grip-framework/grip) |253|18|3|The microframework for writing powerful web applications.|2023-02-02T04:43:00Z|
 | [athena](https://github.com/athena-framework/athena) |179|14|17|An ecosystem of reusable, independent components|2023-04-26T13:20:53Z|
 | [raze](https://github.com/samueleaton/raze) |176|4|9|Modular, light web framework for Crystal|2021-01-02T01:20:01Z|
@@ -19,4 +19,4 @@ Please update **list.txt** (via Pull Request)
 | [lattice-core](https://github.com/jasonl99/lattice-core) |57|2|2|A WebSocket-first object-oriented framework for Crystal|2017-03-31T23:57:57Z|
 | [runcobo](https://github.com/runcobo/runcobo) |47|1|0|An api framework with type-safe params, elegant json serializer. Thanks for enjoying it! 👻👻 https://runcobo.github.io/docs/|2022-03-16T06:43:35Z|
 
-*Last Automatic Update: 2023-05-22 13:09:47 UTC*
+*Last Automatic Update: 2023-05-22 14:59:47 UTC*
