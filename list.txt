@@ -10,3 +10,4 @@ https://github.com/runcobo/runcobo
 https://github.com/athena-framework/athena
 https://github.com/mint-lang/mint
 https://github.com/martenframework/marten
+https://github.com/amethyst-framework/amethyst
