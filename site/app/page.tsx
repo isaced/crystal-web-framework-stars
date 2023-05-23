@@ -1,4 +1,8 @@
 import Image from "next/image";
+import * as dayjs from "dayjs";
+import localizedFormat from "dayjs/plugin/localizedFormat";
+
+dayjs.extend(localizedFormat);
 
 const DATA_URL = "https://raw.githubusercontent.com/isaced/crystal-web-framework-stars/master/list.json";
 
@@ -69,7 +73,7 @@ export default async function Home() {
                 <td className="px-6 py-4">{repo.forks_count}</td>
                 <td className="px-6 py-4">{repo.open_issues_count}</td>
                 <td className="px-6 py-4">{repo.description}</td>
-                <td className="px-6 py-4">{repo.last_commit_date}</td>
+                <td className="px-6 py-4">{dayjs.default(repo.last_commit_date).format("LL").toString()}</td>
               </tr>
             ))}
           </tbody>
