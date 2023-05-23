@@ -6,6 +6,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'list.txt'
   workflow_dispatch:
 
 jobs:
