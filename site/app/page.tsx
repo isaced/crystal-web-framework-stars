@@ -46,6 +46,7 @@ export default async function Home() {
       <div className="relative overflow-x-auto mt-10 space-y-3">
         {data?.map((repo, idx) => (
           <a
+            key={idx}
             href={repo.html_url}
             target="__blank"
             className="p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex items-center space-x-6"
