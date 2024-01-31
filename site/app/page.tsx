@@ -33,7 +33,11 @@ const StarColors = [
 ];
 
 async function fetchData() {
-  return (await fetch(DATA_URL)).json() as Promise<Repo[]>;
+  return (await fetch(DATA_URL, {
+    next: {
+      revalidate: 86400 // 24 hours
+    }
+  })).json() as Promise<Repo[]>;
 }
 
 export default async function Home() {
