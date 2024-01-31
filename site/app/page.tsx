@@ -14,7 +14,7 @@ config.autoAddCss = false;
 dayjs.extend(localizedFormat);
 
 const DATA_URL =
-  "https://gh.api.99988866.xyz/https://raw.githubusercontent.com/isaced/crystal-web-framework-stars/master/list.json";
+  "https://raw.githubusercontent.com/isaced/crystal-web-framework-stars/master/list.json";
 
 interface Repo {
   name: string;
