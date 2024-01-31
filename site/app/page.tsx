@@ -36,8 +36,8 @@ export default async function Home() {
   const data = await fetchData();
 
   return (
-    <main className="py-10 px-3 sm:px-8 lg:px-10 xl:px-20">
-      <h1 className="text-5xl flex items-center space-x-2">
+    <main className="container mx-auto py-10 px-3">
+      <h1 className="text-5xl flex space-x-2">
         <Image src="/crystal-logo.png" alt={"Crystal Logo"} width={46} height={46} className="h-fit dark:invert" />
         <span>Top Crystal Web Frameworks</span>
       </h1>
