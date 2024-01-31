@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 240, 240, 240;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -21,10 +21,6 @@ body {
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
-a {
-  color: rgb(0, 112, 243);
-}
-
 a:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }

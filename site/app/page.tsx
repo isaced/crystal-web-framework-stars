@@ -26,7 +26,11 @@ interface Repo {
   last_commit_date: string;
 }
 
-const StarColors = ["text-rose-800", "text-rose-700", "text-rose-600", "text-rose-500", "text-rose-400"];
+const StarColors = [
+  "text-rose-600 dark:text-rose-400",
+  "text-rose-500 dark:text-rose-300",
+  "text-rose-400 dark:text-rose-200"
+];
 
 async function fetchData() {
   return (await fetch(DATA_URL)).json() as Promise<Repo[]>;
@@ -58,7 +62,7 @@ export default async function Home() {
             key={idx}
             href={repo.html_url}
             target="__blank"
-            className="p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 flex items-center space-x-6"
+            className="p-6 bg-white border border-gray-200 rounded-lg dark:bg-black dark:border-gray-700 dark:hover:bg-gray-900 flex items-center space-x-6 hover:bg-gray-50 hover:border-gray-300 dark:hover:border-gray-500"
           >
             <div
               className={`w-20 text-2xl font-bold text-center tracking-tight ${StarColors[idx] ?? "text-gray-900 dark:text-white"
