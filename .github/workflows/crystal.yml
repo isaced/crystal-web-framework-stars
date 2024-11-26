@@ -8,6 +8,8 @@ on:
       - master
     paths:
       - 'list.txt'
+      - 'list2md.cr'
+      - 'README.ecr'
   workflow_dispatch:
 
 jobs:
