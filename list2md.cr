@@ -31,6 +31,7 @@ File.each_line("list.txt") do |line|
     # filter keys
     repos << repo.select { |k, v| [
       "name",
+      "full_name",
       "html_url",
       "stargazers_count",
       "forks_count",
