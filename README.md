@@ -3,7 +3,7 @@
 A list of popular github projects related to Crystal web framework (ranked by stars automatically)
 Please update **list.txt** (via Pull Request)
 
-| Project Name | Description | Stars | Forks | Open Issues |  | Activity |
+| Project Name | Description | Stars | Forks | Open Issues | Activity |
 | ------------ | ----- | ----- | ----------- | ----------- | ----------- |
 | [mint](https://github.com/mint-lang/mint) | 🍃 A refreshing programming language for the front-end web. | <img src="https://img.shields.io/github/stars/mint-lang/mint?style=flat-square"/>|<img src="https://img.shields.io/github/forks/mint-lang/mint?style=flat-square"/>|<img src="https://img.shields.io/github/issues/mint-lang/mint?style=flat-square"/>|<img src="https://img.shields.io/github/last-commit/mint-lang/mint?style=flat-square"/>|
 | [kemal](https://github.com/kemalcr/kemal) | Fast, Effective, Simple Web Framework | <img src="https://img.shields.io/github/stars/kemalcr/kemal?style=flat-square"/>|<img src="https://img.shields.io/github/forks/kemalcr/kemal?style=flat-square"/>|<img src="https://img.shields.io/github/issues/kemalcr/kemal?style=flat-square"/>|<img src="https://img.shields.io/github/last-commit/kemalcr/kemal?style=flat-square"/>|
@@ -19,4 +19,4 @@ Please update **list.txt** (via Pull Request)
 | [lattice-core](https://github.com/jasonl99/lattice-core) | A WebSocket-first object-oriented framework for Crystal | <img src="https://img.shields.io/github/stars/jasonl99/lattice-core?style=flat-square"/>|<img src="https://img.shields.io/github/forks/jasonl99/lattice-core?style=flat-square"/>|<img src="https://img.shields.io/github/issues/jasonl99/lattice-core?style=flat-square"/>|<img src="https://img.shields.io/github/last-commit/jasonl99/lattice-core?style=flat-square"/>|
 | [runcobo](https://github.com/runcobo/runcobo) | An api framework with type-safe params, elegant json serializer. Thanks for enjoying it! 👻👻 https://runcobo.github.io/docs/ | <img src="https://img.shields.io/github/stars/runcobo/runcobo?style=flat-square"/>|<img src="https://img.shields.io/github/forks/runcobo/runcobo?style=flat-square"/>|<img src="https://img.shields.io/github/issues/runcobo/runcobo?style=flat-square"/>|<img src="https://img.shields.io/github/last-commit/runcobo/runcobo?style=flat-square"/>|
 
-*Last Automatic Update: 2024-11-26 03:18:22 UTC*
+*Last Automatic Update: 2024-11-26 03:22:32 UTC*
