@@ -3,7 +3,7 @@
 A list of popular github projects related to Crystal web framework (ranked by stars automatically)
 Please update **list.txt** (via Pull Request)
 
-| Project Name | Description | Stars | Forks | Open Issues |  | Activity |
+| Project Name | Description | Stars | Forks | Open Issues | Activity |
 | ------------ | ----- | ----- | ----------- | ----------- | ----------- |<% @list.each do |item| %>
 | [<%= item["name"] %>](<%= item["html_url"] %>) | <%= item["description"] %> | <img src="https://img.shields.io/github/stars/<%= item["full_name"] %>?style=flat-square"/>|<img src="https://img.shields.io/github/forks/<%= item["full_name"] %>?style=flat-square"/>|<img src="https://img.shields.io/github/issues/<%= item["full_name"] %>?style=flat-square"/>|<img src="https://img.shields.io/github/last-commit/<%= item["full_name"] %>?style=flat-square"/>|<% end %>
 
