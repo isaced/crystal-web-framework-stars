@@ -5,6 +5,6 @@ Please update **list.txt** (via Pull Request)
 
 | Project Name | Description | Stars | Forks | Open Issues | Activity |
 | ------------ | ----- | ----- | ----------- | ----------- | ----------- |<% @list.each do |item| %>
-| [<%= item["name"] %>](<%= item["html_url"] %>) | <%= item["description"] %> | <img width="150px" src="https://img.shields.io/github/stars/<%= item["full_name"] %>?style=flat-square"/>|<img width="150px" src="https://img.shields.io/github/forks/<%= item["full_name"] %>?style=flat-square"/>|<img width="150px" src="https://img.shields.io/github/issues/<%= item["full_name"] %>?style=flat-square"/>|<img width="300px" src="https://img.shields.io/github/last-commit/<%= item["full_name"] %>?style=flat-square"/>|<% end %>
+| [<%= item["name"] %>](<%= item["html_url"] %>) | <%= item["description"] %> | <img width="250px" src="https://img.shields.io/github/stars/<%= item["full_name"] %>?style=flat-square"/>|<img width="250px" src="https://img.shields.io/github/forks/<%= item["full_name"] %>?style=flat-square"/>|<img width="350px" src="https://img.shields.io/github/issues/<%= item["full_name"] %>?style=flat-square"/>|<img width="500px" src="https://img.shields.io/github/last-commit/<%= item["full_name"] %>?style=flat-square"/>|<% end %>
 
 *Last Automatic Update: <%= time %>*
