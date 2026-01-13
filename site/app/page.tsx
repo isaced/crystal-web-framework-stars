@@ -1,5 +1,5 @@
 import Image from "next/image";
-import * as dayjs from "dayjs";
+import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
