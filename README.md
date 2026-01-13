@@ -1,7 +1,10 @@
 # Top Crystal Web Frameworks
 
 A list of popular github projects related to Crystal web framework (ranked by stars automatically)
-Please update **list.txt** (via Pull Request)
+
+Website: [crystal-web-framework-stars.vercel.app](https://crystal-web-framework-stars.vercel.app)
+
+Please update [**list.txt**](list.txt) (via Pull Request)
 
 | Project Name | Description | Stars | Forks | Open Issues | Activity |
 | ------------ | ----- | ----- | ----------- | ----------- | ----------- |
@@ -19,4 +22,4 @@ Please update **list.txt** (via Pull Request)
 | [lattice-core](https://github.com/jasonl99/lattice-core) | A WebSocket-first object-oriented framework for Crystal | <img width="250px" src="https://img.shields.io/github/stars/jasonl99/lattice-core?style=flat-square"/>|<img width="250px" src="https://img.shields.io/github/forks/jasonl99/lattice-core?style=flat-square"/>|<img width="350px" src="https://img.shields.io/github/issues/jasonl99/lattice-core?style=flat-square"/>|<img width="500px" src="https://img.shields.io/github/last-commit/jasonl99/lattice-core?style=flat-square"/>|
 | [runcobo](https://github.com/runcobo/runcobo) | An api framework with type-safe params, elegant json serializer. Thanks for enjoying it! 👻👻 https://runcobo.github.io/docs/ | <img width="250px" src="https://img.shields.io/github/stars/runcobo/runcobo?style=flat-square"/>|<img width="250px" src="https://img.shields.io/github/forks/runcobo/runcobo?style=flat-square"/>|<img width="350px" src="https://img.shields.io/github/issues/runcobo/runcobo?style=flat-square"/>|<img width="500px" src="https://img.shields.io/github/last-commit/runcobo/runcobo?style=flat-square"/>|
 
-*Last Automatic Update: 2026-01-13 15:56:07 UTC*
+*Last Automatic Update: 2026-01-13 16:24:40 UTC*
