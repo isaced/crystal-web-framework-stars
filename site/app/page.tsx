@@ -3,7 +3,7 @@ import * as dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCodeFork, faClock, faCircleInfo } from '@fortawesome/free-solid-svg-icons'
+import { faCodeFork, faClock, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 // Tell Font Awesome to skip adding the CSS automatically 
@@ -66,7 +66,7 @@ export default async function Home() {
             key={idx}
             href={repo.html_url}
             target="__blank"
-            className="p-6 bg-white border border-gray-200 rounded-lg dark:bg-black dark:border-gray-700 dark:hover:bg-gray-900 flex items-center space-x-6 hover:bg-gray-50 hover:border-gray-300 dark:hover:border-gray-500"
+            className="p-6 bg-white border border-gray-200 rounded-lg dark:bg-black dark:border-gray-700 dark:hover:bg-gray-900 flex items-center space-x-6 hover:bg-gray-50 hover:border-gray-300 dark:hover:border-gray-500 transition-all duration-100"
           >
             <div
               className={`w-20 text-2xl font-bold text-center tracking-tight ${StarColors[idx] ?? "text-gray-900 dark:text-white"
@@ -94,7 +94,7 @@ export default async function Home() {
         ))}
       </div>
 
-      <div className="sm:flex justify-between py-4 text-xs space-y-4">
+      <div className="sm:flex justify-between mt-6 py-4 text-xs space-y-4">
         <div className="flex text-slate-400">
           <a
             href="https://github.com/isaced/crystal-web-framework-stars"
@@ -109,13 +109,13 @@ export default async function Home() {
         </div>
 
         <a
-          className="pointer-events-none flex gap-2 lg:pointer-events-auto text-gray-500 dark:text-white"
+          className="pointer-events-none flex items-center gap-2 lg:pointer-events-auto text-gray-500 dark:text-white"
           href="https://vercel.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Deploy By{" "}
-          <Image src="/vercel.svg" alt="Vercel Logo" className="dark:invert" width={50} height={50} priority />
+          <span>Deploy By</span>
+          <Image src="/vercel.svg" alt="Vercel Logo" className="dark:invert" width={50} height={50} />
         </a>
       </div>
     </main >
