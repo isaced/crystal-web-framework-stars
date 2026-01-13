@@ -49,7 +49,7 @@ export default async function Home() {
   return (
     <main className="container max-w-4xl mx-auto py-12 px-4 sm:px-6">
       <div className="flex flex-col items-center justify-center text-center space-y-6 mb-12">
-        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight flex items-center justify-center gap-4 text-zinc-900 dark:text-white">
+        <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight flex flex-col md:flex-row items-center justify-center gap-4 text-zinc-900 dark:text-white">
           <Image
             src="/crystal-logo.png"
             alt="Crystal Logo"
@@ -150,7 +150,7 @@ export default async function Home() {
         ))}
       </div>
 
-      <div className="sm:flex justify-between mt-12 py-6 border-t border-zinc-100 dark:border-zinc-800 text-xs">
+      <div className="flex justify-between mt-12 py-6 border-t border-zinc-100 dark:border-zinc-800 text-xs">
         <div className="flex items-center text-zinc-400 dark:text-zinc-600">
           <a
             href="https://github.com/isaced/crystal-web-framework-stars"
@@ -165,7 +165,7 @@ export default async function Home() {
         </div>
 
         <a
-          className="flex items-center gap-2 mt-4 sm:mt-0 text-zinc-400 hover:text-zinc-600 dark:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+          className="flex items-center gap-2 text-zinc-400 hover:text-zinc-600 dark:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
           href="https://vercel.com"
           target="_blank"
           rel="noopener noreferrer"
