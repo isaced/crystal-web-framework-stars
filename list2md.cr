@@ -38,6 +38,7 @@ File.each_line("list.txt") do |line|
       "open_issues_count",
       "description",
       "last_commit_date",
+      "organization",
     ].includes?(k) }
 
     repos.sort_by! { |item| -item["stargazers_count"].as_i }
