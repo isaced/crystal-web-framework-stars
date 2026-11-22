@@ -16,7 +16,7 @@ class Output
     text.gsub('|', "\\|").gsub('\n', ' ').gsub('\r', ' ')
   end
 
-  def truncate_cell(text : String, limit : Int32 = 90) : String
+  def truncate_cell(text : String, limit : Int32 = 70) : String
     escaped = escape_cell(text)
     return escaped if escaped.size <= limit
 
