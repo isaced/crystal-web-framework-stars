@@ -45,5 +45,9 @@ jobs:
         git config user.name $USER
         git checkout master
         git add README.md list.json
-        git commit -m "Auto update"
-        git push
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto update"
+          git push
+        fi
