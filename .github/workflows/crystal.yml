@@ -12,22 +12,27 @@ on:
       - 'README.ecr'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
     container:
-      image: crystallang/crystal:nightly-alpine
+      image: crystallang/crystal:1.22.3-alpine
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 0
-      
+
     - name: Run Crystal Script
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: crystal list2md.cr
-    
+
     - name: Commit & Push
       env:
         USER: github-actions[bot]
@@ -40,6 +45,9 @@ jobs:
         git config user.name $USER
         git checkout master
         git add README.md list.json
-        git commit -m "Auto update"
-        git push
-        
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto update"
+          git push
+        fi
