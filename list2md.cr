@@ -16,10 +16,10 @@ API_ROOT = "https://api.github.com"
 
 # Auth: GitHub removed query-parameter tokens in 2021, so send the token as
 # an Authorization header instead. GITHUB_TOKEN is provided automatically
-# by GitHub Actions; without it the requests run unauthenticated, which is
-# fine for this list's size.
+# by GitHub Actions and GH_TOKEN is what `gh` exports locally; without a
+# token the requests run unauthenticated, which is fine for this list's size.
 HEADERS = HTTP::Headers{"User-Agent" => "crystal-web-framework-stars"}
-if token = ENV["GITHUB_TOKEN"]?
+if token = ENV["GITHUB_TOKEN"]? || ENV["GH_TOKEN"]?
   HEADERS["Authorization"] = "Bearer #{token}" unless token.empty?
 end
 
@@ -89,7 +89,7 @@ File.each_line("list.txt") do |line|
   url = line.strip
   if url.starts_with?("https://github.com/")
     total += 1
-    slug = url[19..]
+    slug = url[19..].chomp(".git").strip('/')
 
     # repo
     repo = begin
