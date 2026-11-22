@@ -8,8 +8,8 @@ Please update [**list.txt**](list.txt) (via Pull Request)
 
 Status: 🟢 Active (commit within the last year) · 🟡 Stale (no commit for 1–3 years) · ⚫ Inactive (no commit for 3+ years)
 
-| Project Name | Description | Stars | Forks | Open Issues | Status | Activity |
-| ------------ | ----- | ----- | ----------- | ----------- | ------ | -------- |<% @list.each do |item| %>
-| [<%= item["name"] %>](<%= item["html_url"] %>) | <%= item["description"] %> | <img width="250px" src="https://img.shields.io/github/stars/<%= item["full_name"] %>?style=flat-square"/>|<img width="250px" src="https://img.shields.io/github/forks/<%= item["full_name"] %>?style=flat-square"/>|<img width="350px" src="https://img.shields.io/github/issues/<%= item["full_name"] %>?style=flat-square"/>|<% case item["activity_status"].as_s %><% when "active" %>🟢 Active<% when "stale" %>🟡 Stale<% else %>⚫ Inactive<% end %>|<img width="500px" src="https://img.shields.io/github/last-commit/<%= item["full_name"] %>?style=flat-square"/>|<% end %>
+| Project Name | Description | Stars | Forks | Open Issues | Status |
+| ------------ | ----- | ----- | ----------- | ----------- | ------ |<% @list.each do |item| %>
+| [<%= item["name"] %>](<%= item["html_url"] %>) | <%= item["description"] %> | <img width="250px" src="https://img.shields.io/github/stars/<%= item["full_name"] %>?style=flat-square"/>|<img width="250px" src="https://img.shields.io/github/forks/<%= item["full_name"] %>?style=flat-square"/>|<img width="350px" src="https://img.shields.io/github/issues/<%= item["full_name"] %>?style=flat-square"/>|<% case item["activity_status"].as_s %><% when "active" %>🟢 Active<% when "stale" %>🟡 Stale<% else %>⚫ Inactive<% end %>|<% end %>
 
 *Last Automatic Update: <%= time %>*
