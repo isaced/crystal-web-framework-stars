@@ -16,7 +16,7 @@ class Output
     text.gsub('|', "\\|").gsub('\n', ' ').gsub('\r', ' ')
   end
 
-  def truncate_cell(text : String, limit : Int32 = 90) : String
+  def truncate_cell(text : String, limit : Int32 = 70) : String
     escaped = escape_cell(text)
     return escaped if escaped.size <= limit
 
@@ -25,12 +25,18 @@ class Output
     "#{cut}…"
   end
 
-  def status_label(status : String) : String
-    case status
-    when "active" then "🟢 Active"
-    when "stale"  then "🟡 Stale"
-    else               "⚫ Inactive"
-    end
+  def status_badge(status : String) : String
+    color = case status
+            when "active" then "brightgreen"
+            when "stale"  then "yellow"
+            else               "lightgrey"
+            end
+    label = case status
+            when "active" then "Active"
+            when "stale"  then "Stale"
+            else               "Inactive"
+            end
+    %(<img height="20" src="https://img.shields.io/badge/status-#{label}-#{color}?style=flat-square"/>)
   end
 
   def count_status(status : String) : Int32
