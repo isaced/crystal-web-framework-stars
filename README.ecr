@@ -1,15 +1,17 @@
 # Top Crystal Web Frameworks
 
-A list of popular github projects related to Crystal web framework (ranked by stars automatically)
+A list of popular GitHub projects related to Crystal web framework (ranked by stars automatically).
 
 Website: [crystal-web-framework-stars.vercel.app](https://crystal-web-framework-stars.vercel.app)
 
 Please update [**list.txt**](list.txt) (via Pull Request)
 
-Status: 🟢 Active (commit within the last year) · 🟡 Stale (no commit for 1–3 years) · ⚫ Inactive (no commit for 3+ years)
+<%= @list.size %> frameworks · <%= count_status("active") %> active · <%= count_status("stale") %> stale · <%= count_status("inactive") %> inactive
 
-| Project Name | Description | Stars | Forks | Open Issues | Status |
-| ------------ | ----- | ----- | ----------- | ----------- | ------ |<% @list.each do |item| %>
-| [<%= item["name"] %>](<%= item["html_url"] %>) | <%= item["description"] %> | <img width="250px" src="https://img.shields.io/github/stars/<%= item["full_name"] %>?style=flat-square"/>|<img width="250px" src="https://img.shields.io/github/forks/<%= item["full_name"] %>?style=flat-square"/>|<img width="350px" src="https://img.shields.io/github/issues/<%= item["full_name"] %>?style=flat-square"/>|<% case item["activity_status"].as_s %><% when "active" %>🟢 Active<% when "stale" %>🟡 Stale<% else %>⚫ Inactive<% end %>|<% end %>
+<sub>Status: 🟢 Active (commit within the last year) · 🟡 Stale (no commit for 1–3 years) · ⚫ Inactive (no commit for 3+ years)</sub>
 
-*Last Automatic Update: <%= time %>*
+| Project | Description | Stars | Forks | Issues | Status |
+| :--- | :--- | :---: | :---: | :---: | :---: |<% @list.each do |item| %>
+| [<%= item["name"] %>](<%= item["html_url"] %>) | <%= truncate_cell(item["description"].as_s) %> | <img height="20" src="https://img.shields.io/github/stars/<%= item["full_name"] %>?style=flat-square"/> | <img height="20" src="https://img.shields.io/github/forks/<%= item["full_name"] %>?style=flat-square"/> | <img height="20" src="https://img.shields.io/github/issues/<%= item["full_name"] %>?style=flat-square"/> | <%= status_label(item["activity_status"].as_s) %> |<% end %>
+
+<sub><em>Last Automatic Update: <%= time %></em></sub>

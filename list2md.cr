@@ -10,6 +10,32 @@ class Output
   end
 
   ECR.def_to_s "README.ecr"
+
+  # Pipe characters and line breaks would break out of a Markdown table cell.
+  def escape_cell(text : String) : String
+    text.gsub('|', "\\|").gsub('\n', ' ').gsub('\r', ' ')
+  end
+
+  def truncate_cell(text : String, limit : Int32 = 90) : String
+    escaped = escape_cell(text)
+    return escaped if escaped.size <= limit
+
+    cut = escaped[0, limit].rstrip
+    cut = cut.chomp('\\') if cut.ends_with?('\\')
+    "#{cut}…"
+  end
+
+  def status_label(status : String) : String
+    case status
+    when "active" then "🟢 Active"
+    when "stale"  then "🟡 Stale"
+    else               "⚫ Inactive"
+    end
+  end
+
+  def count_status(status : String) : Int32
+    @list.count { |item| item["activity_status"]?.try(&.as_s?) == status }
+  end
 end
 
 API_ROOT = "https://api.github.com"
