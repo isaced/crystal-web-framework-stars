@@ -24,4 +24,4 @@ Status: 🟢 Active (commit within the last year) · 🟡 Stale (no commit for 1
 | [lattice-core](https://github.com/jasonl99/lattice-core) | A WebSocket-first object-oriented framework for Crystal | <img width="250px" src="https://img.shields.io/github/stars/jasonl99/lattice-core?style=flat-square"/>|<img width="250px" src="https://img.shields.io/github/forks/jasonl99/lattice-core?style=flat-square"/>|<img width="350px" src="https://img.shields.io/github/issues/jasonl99/lattice-core?style=flat-square"/>|⚫ Inactive|
 | [runcobo](https://github.com/runcobo/runcobo) | An api framework with type-safe params, elegant json serializer. Thanks for enjoying it! 👻👻 https://runcobo.github.io/docs/ | <img width="250px" src="https://img.shields.io/github/stars/runcobo/runcobo?style=flat-square"/>|<img width="250px" src="https://img.shields.io/github/forks/runcobo/runcobo?style=flat-square"/>|<img width="350px" src="https://img.shields.io/github/issues/runcobo/runcobo?style=flat-square"/>|🟢 Active|
 
-*Last Automatic Update: 2026-11-22 13:17:17 UTC*
+*Last Automatic Update: 2026-11-22 13:19:44 UTC*
