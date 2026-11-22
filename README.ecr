@@ -12,6 +12,6 @@ Please update [**list.txt**](list.txt) (via Pull Request)
 
 | Project | Description | Stars | Forks | Issues | Status |
 | :--- | :--- | :---: | :---: | :---: | :---: |<% @list.each do |item| %>
-| [<%= item["name"] %>](<%= item["html_url"] %>) | <%= truncate_cell(item["description"].as_s) %> | <img height="20" src="https://img.shields.io/github/stars/<%= item["full_name"] %>?style=flat-square"/> | <img height="20" src="https://img.shields.io/github/forks/<%= item["full_name"] %>?style=flat-square"/> | <img height="20" src="https://img.shields.io/github/issues/<%= item["full_name"] %>?style=flat-square"/> | <%= status_label(item["activity_status"].as_s) %> |<% end %>
+| [<%= item["name"] %>](<%= item["html_url"] %>) | <%= truncate_cell(item["description"].as_s) %> | <img height="20" src="https://img.shields.io/github/stars/<%= item["full_name"] %>?style=flat-square"/> | <img height="20" src="https://img.shields.io/github/forks/<%= item["full_name"] %>?style=flat-square"/> | <img height="20" src="https://img.shields.io/github/issues/<%= item["full_name"] %>?style=flat-square"/> | <%= status_badge(item["activity_status"].as_s) %> |<% end %>
 
 <sub><em>Last Automatic Update: <%= time %></em></sub>
