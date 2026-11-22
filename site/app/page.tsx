@@ -24,6 +24,7 @@ interface Repo {
   open_issues_count: number;
   description: string;
   last_commit_date: string;
+  activity_status?: string;
   organization?: {
     avatar_url: string;
   };
@@ -34,6 +35,33 @@ const StarColors = [
   "text-rose-500 dark:text-rose-300",
   "text-rose-400 dark:text-rose-200"
 ];
+
+const ActivityStatus: Record<string, { label: string; dot: string; text: string }> = {
+  active: { label: "Active", dot: "bg-emerald-500", text: "text-emerald-600 dark:text-emerald-400" },
+  stale: { label: "Stale", dot: "bg-amber-500", text: "text-amber-600 dark:text-amber-400" },
+  inactive: { label: "Inactive", dot: "bg-zinc-400 dark:bg-zinc-500", text: "text-zinc-500 dark:text-zinc-500" },
+};
+
+// Prefer the status baked into list.json; fall back to deriving it from the
+// last commit date with the same thresholds the generator uses
+// (active <= 1 year, stale <= 3 years, otherwise inactive).
+function activityOf(repo: Repo) {
+  if (repo.activity_status && ActivityStatus[repo.activity_status]) {
+    return ActivityStatus[repo.activity_status];
+  }
+  const days = (Date.now() - new Date(repo.last_commit_date).getTime()) / 86_400_000;
+  return days <= 365 ? ActivityStatus.active : days <= 365 * 3 ? ActivityStatus.stale : ActivityStatus.inactive;
+}
+
+function StatusPill({ repo }: { repo: Repo }) {
+  const s = activityOf(repo);
+  return (
+    <div className="flex items-center gap-1.5">
+      <span className={`size-2 rounded-full ${s.dot}`} />
+      <span className={s.text}>{s.label}</span>
+    </div>
+  );
+}
 
 async function fetchData() {
   return (await fetch(DATA_URL, {
@@ -132,6 +160,7 @@ export default async function Home() {
 
               {/* Meta Info */}
               <div className="flex items-center flex-wrap gap-4 text-xs font-medium text-zinc-500 dark:text-zinc-500">
+                <StatusPill repo={repo} />
                 <div className="flex items-center gap-1.5 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors">
                   <FontAwesomeIcon icon={faClock} className="w-3.5 h-3.5 opacity-70" />
                   <span>{dayjs(repo.last_commit_date).format("MMM D, YYYY")}</span>
