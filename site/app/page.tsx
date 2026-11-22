@@ -45,11 +45,17 @@ const ActivityStatus: Record<string, { label: string; dot: string; text: string 
 // Prefer the status baked into list.json; fall back to deriving it from the
 // last commit date with the same thresholds the generator uses
 // (active <= 1 year, stale <= 3 years, otherwise inactive).
+const DAY_MS = 86_400_000;
+
 function activityOf(repo: Repo) {
   if (repo.activity_status && ActivityStatus[repo.activity_status]) {
     return ActivityStatus[repo.activity_status];
   }
-  const days = (Date.now() - new Date(repo.last_commit_date).getTime()) / 86_400_000;
+  const timestamp = Date.parse(repo.last_commit_date);
+  if (Number.isNaN(timestamp)) {
+    return ActivityStatus.inactive;
+  }
+  const days = (Date.now() - timestamp) / DAY_MS;
   return days <= 365 ? ActivityStatus.active : days <= 365 * 3 ? ActivityStatus.stale : ActivityStatus.inactive;
 }
 
